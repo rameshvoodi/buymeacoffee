@@ -4,7 +4,7 @@ const Buy = ({state}) => {
 
     const buyChai = async(event) => {
         event.preventDefault();
-        const {contract} = state;
+        const {contract} = state || {};
         const name = document.querySelector("#name").value;
         const message = document.querySelector("#message").value;
         console.log(name,message, contract);

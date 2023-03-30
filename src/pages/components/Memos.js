@@ -4,7 +4,7 @@ import truncateEthAddress from 'truncate-eth-address';
 
 const Memos = ({state}) => {
     const [memos, setMemos] = useState([]);
-    const {contract} = state;
+    const {contract} = state || {};
 
     useEffect(() => {
         const getMemoMessages = async() =>{
